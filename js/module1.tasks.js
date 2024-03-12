@@ -134,7 +134,7 @@ console.log(totalSalary);
 const height = 23;
 const weight = 10;
 const square = height * weight;
-const message = `Якщо висота прямокутника складає: ${height}, а ширина складає ${Width} тоді його площа дорівнюватиме ${square}`;
+const messageee = `Якщо висота прямокутника складає: ${height}, а ширина складає ${Width} тоді його площа дорівнюватиме ${square}`;
 
 // const reactangleWidth = 10;
 // const reactangleHeight = 50;
@@ -144,10 +144,10 @@ const message = `Якщо висота прямокутника складає: 
 
 
 //Створити змінну, яка містить рядок з вашим ім'ям та прізвищем. Використовуючи метод .length, вивести в консоль кількість символів у рядку.//
-const firstName = "Liza";
-const lastName = "Popkova";
-const fullName = firstName + " " + lastName;
-console.log(fullName.length)
+// const firstName = "Liza";
+// const lastName = "Popkova";
+// const fullName = firstName + " " + lastName;
+// console.log(fullName.length)
 
 
 // const myName = "Veronika";
