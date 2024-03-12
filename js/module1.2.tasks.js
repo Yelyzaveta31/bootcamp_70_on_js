@@ -62,3 +62,71 @@ const randomNumber = Math.floor(Math.random() * (255 - 0 + 1)) + 0;
 console.log(randomNumber);
 
 // Math.floor(Math.random() * (max - min + 1)) + min;
+
+
+
+// За допомогою об’єкту Math виведіть в консоль найбільше і найменше значення серед заданих (2, 34, 99, 3, 22, 36, 733, 18)
+
+function findMaxNumbermaxNumber() {
+  const maxNumber = Math.max (2, 34, 99, 3, 22, 36, 733, 18);
+  return maxNumber;
+  
+}
+// console.log(Math)
+// function findMaxNumber() {
+//     const maxNumber = Math.max(2, 34, 99, 3, 22, 36, 733, 18);
+//     return maxNumber;
+// }
+// findMaxNumber()
+
+
+// Створити змінну для зберігання числа.
+// Використати метод Math.sqrt() для обчислення квадратного кореня числа та вивести результат в консоль.
+// - function declaration (оголошення функції)
+
+function declaration  (number) {
+  const findNumber = math.sqrt(number);
+  return findNumber
+}
+
+
+// const result = sqrtNumber(25);
+// function sqrtNumber(number) {
+//     const findNumber = Math.sqrt(number);
+//     return findNumber;
+// }
+// console.log(result);
+
+// // 2 - function expression (функціональний вираз) 
+// const sqrtNumber = (number) => {
+//   const findNumber = Math.sqrt(number);
+//   return findNumber;
+// }
+// const result = sqrtNumber(25);
+// console.log(result);
+
+
+// / Створіть змінну userName з ім’ям користувача і змінну
+// payment з сумою до оплати.За допомогою шаблонного рядка виведіть н
+
+// а екран через alert повідомлення на прикладі цього: «Дякуємо, Олександро! До сплати 300 гривень».
+
+
+const userName = prompt("Eneter your name");
+const totalPrice = prompt("Eneter your sum")
+
+function payment(userName, totalPrice) {
+  alert(`«Дякуємо, ${userName}! До сплати ${totalPrice} гривень».`)
+
+}
+console.log(payment(userName, totalPrice));
+
+// const userName = prompt('enter your name');
+// const totalPrice = prompt('enter your sum');
+
+// function showPayment(userName, totalPrice) {
+//     alert(`«Дякуємо, ${userName}! До сплати ${totalPrice} гривень»`)
+// };
+
+// const result = showPayment(userName, totalPrice);
+// console.log(result)

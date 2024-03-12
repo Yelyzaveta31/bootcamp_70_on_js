@@ -97,3 +97,69 @@ console.log(msg);
 // const msg = `${companyName} has ${repairBots + defenceBots} bots in stock`;
 
 // console.log(msg); // "Cyberdyne Systems has 200 bots in stock"
+
+
+// Заміни вирази зі стандартними математичними операторами на комбінований оператор присвоєння з додаванням, відніманням, множенням і діленням:
+// Значення змінної a дорівнюватиме 7 - використовуй оператор +=
+// Значення змінної b дорівнюватиме 6 - використовуй  оператор -=
+// Значення змінної c дорівнюватиме 45 - використовуй оператор *=
+// Значення змінної d дорівнюватиме 2 - використовуй оператор /=
+
+a = a + 2;
+a += 2;
+console.log(a)
+
+b = b - 4;
+b -= 4;
+console.log(b)
+
+c = c * 8;
+c *= 8; 
+console.log(c);
+
+ d = d / 10;
+d /= 10;
+console.log(d);
+
+// Обчислити бонус для працівника зарплати, якщо він працює більше 40 годин на тиждень.
+// Бонус дорівнює 20 % від зарплати за додаткові години.(використати тернарний оператор)
+
+const salary = Number(prompt("Enter your salary"))
+const bonus = 20/100 * salary
+const totalSalary = salary + bonus;
+console.log(totalSalary);
+
+// Напишіть скрипт, який знаходить площу прямокутника. Висота 23см, шириною 10см - всі данні повинні зберігатися в змінних.  Значення площі повинно зберігається в числовій змінній. Виведіть повідомлення для користувача з результатом.
+
+const height = 23;
+const weight = 10;
+const square = height * weight;
+const message = `Якщо висота прямокутника складає: ${height}, а ширина складає ${Width} тоді його площа дорівнюватиме ${square}`;
+
+// const reactangleWidth = 10;
+// const reactangleHeight = 50;
+// const squareReactangle = reactangleWidth * reactangleHeight;
+// console.log(message);
+
+
+
+//Створити змінну, яка містить рядок з вашим ім'ям та прізвищем. Використовуючи метод .length, вивести в консоль кількість символів у рядку.//
+const firstName = "Liza";
+const lastName = "Popkova";
+const fullName = firstName + " " + lastName;
+console.log(fullName.length)
+
+
+// const myName = "Veronika";
+// const surName = "Karaulova";
+// const fullName = myName + " " + surName;
+// console.log(fullName);
+// const nameLength = fullName.length;
+// console.log(fullName.length);
+// const myName = prompt("Please enter your name");
+// const surName = prompt("Please enter your surname");
+// //const fullName = myName + " " + surName;//
+// const fullName = `My Name is ${myName} and my surname is ${surName}`
+// console.log(fullName);
+// const nameLength = fullName.length;
+// console.log(fullName.length);
