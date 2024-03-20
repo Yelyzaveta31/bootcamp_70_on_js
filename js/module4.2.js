@@ -11,6 +11,20 @@ const rectangle = {
 }
 
 
-//Створіть масив об'єктів "студентів" з властивостями "ім'я", "прізвище" та "середній бал".
-// Напишіть функцію "findTopStudent", яка буде повертати об'єкт студента з найвищим середнім балом.
 
+// Створіть об’єкт "user", який буде мати властивості "name", "email", "password".
+//  метод "login", який буде перевіряти правильність введеного email та password.
+// Використайте інпути для запису значень властивостей в об’єкт
+
+
+const user = {
+    nameUser: "Liza",
+    email: "Liza@gmail",
+    password: "liza9374",
+    login () {
+        if this.email !== prompt("Enter your email") && this.password !== prompt("password")
+        {
+            return "wrong e-mail and password"
+        }
+    }
+}
