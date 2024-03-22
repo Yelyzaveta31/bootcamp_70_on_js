@@ -81,3 +81,37 @@ const createArrayNames = arrayNamesFun => {
 return arrayNames
 }
 console.log(createArrayNames(arrayUsers));
+
+// Модуль 5.2
+
+
+
+const products = [
+    {
+      productName: "🍎",
+      price: 5,
+      quantity: 8,
+    },
+    {
+      productName: "🍇",
+      price: 2,
+      quantity: 6,
+    },
+    {
+      productName: "🍋",
+      price: 4,
+      quantity: 6,
+    },
+    {
+      productName: "🍓",
+      price: 1,
+      quantity: 3,
+    },
+];
+
+//Знайдемо кількість фруктів в кошику
+
+const totalQuantity = (products)  => products.reduce((ttl, product) =>
+ ttl + product.quantity, 0)
+
+ console.log(totalQuantity(products))
