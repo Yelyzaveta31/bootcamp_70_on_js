@@ -185,3 +185,28 @@ animal.makeSound(); // "The animal makes a sound"
 
 const cat = new Cat();
 cat.makeSound(); // "Meow"
+
+// Створіть клас Product, що містить властивості name, price, та discount. 
+// Додайте метод getDiscountPrice(), який повертає ціну товару зі знижкою, якщо така є
+//  (якщо властивість discount є ненульовим числом,
+//      знижка відсотків від ціни повинна бути застосована).
+
+class Product {
+    constructor(name, price, discount) {
+        this.name = name;
+        this.price = price;
+        this.discount = discount;
+    }
+    getDiscountPrice() {
+       let totalPrice = 0;
+       totalPrice = this.price - ((this.price * this.discount)/100);
+       if (this.discount > 0) {
+        return totalPrice
+       }
+    }
+}
+
+
+
+const product1 = new Product('Phone', 500, 10);
+console.log(product1.getDiscountPrice()); // 450
