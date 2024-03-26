@@ -204,9 +204,36 @@ class Product {
         return totalPrice
        }
     }
-}
+} 
 
 
 
 const product1 = new Product('Phone', 500, 10);
 console.log(product1.getDiscountPrice()); // 450
+
+
+
+// ? Напиши клас Storage який створює об'єкти для керування складом товарів.
+// ? При виклику отримуватиме один аргумент - початковий масив товарів і
+// ? записуватиме його у властивість items.
+// ?
+// ? Додай методи класу:
+// ? - getItems() - повертає масив товарів.
+// ? - addItem(item) - отримує новий товар і додає його до поточних.
+// ? - removeItem(item) - отримує товар і, якщо він є, видаляє його з поточних.
+//  */
+
+class Storage  {
+    constructor(itemsArr) {
+        this.items = itemsArr;
+    }
+     getItems()  {
+        return this.items;
+     }
+    addItem(item) {
+        this.items.push(item)
+    }
+    removeItem(item) {
+       this.items = this.items.filter(el => el !== item) ;
+    }
+}

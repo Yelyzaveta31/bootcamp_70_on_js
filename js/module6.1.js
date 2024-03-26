@@ -1,97 +1,96 @@
-const book = {
-    year: 2020,
-    author: "Boris",
-}
+// const book = {
+//     year: 2020,
+//     author: "Boris",
+// }
 
-const book1 = Object.create(book);
-console.log(book);
-console.log(book1);
-console.log(book1.year);
-book1.bookName = "Tom";
+// const book1 = Object.create(book);
+// console.log(book);
+// console.log(book1);
+// console.log(book1.year);
+// book1.bookName = "Tom";
 
-const book2 = Object.create(book);
-console.log(book);
-console.log(book2);
-book2.bookName = "Potter"
-
-
-const newBook1 = Object.create(book1);
-newBook1.isNewBook = true;
-console.log(newBook1);
+// const book2 = Object.create(book);
+// console.log(book);
+// console.log(book2);
+// book2.bookName = "Potter"
 
 
- Що буде виведено в консоль
+// const newBook1 = Object.create(book1);
+// newBook1.isNewBook = true;
+// console.log(newBook1);
 
-function foo() {
-  console.log('foo -> this', this);
-}
 
-foo(); // undefined
 
-//? Що буде виведено в консоль
+// function foo() {
+//   console.log('foo -> this', this);
+// }
 
- const book = {
- title: 'React for beginners',
-
-  showThis() {
-    console.log('showThis -> this', this);
-  },
-
- showTitle() {
-   console.log('showTitle -> this.title', this.title);
-  }, };
-
- book.showThis(); // book
-
-const outerShowThis = book.showThis;
-
- outerShowThis(); // undefined
-
-const outerShowTitle = book.showTitle;
-
-outerShowTitle(); // Error
+// foo(); // undefined
 
 //? Що буде виведено в консоль
 
-let user = {
-  name: 'Джон',
-  go() {
-    console.log(this);
-  },
- };
+//  const book = {
+//  title: 'React for beginners',
 
- const goFn = user.go;
- goFn(); // undefined
+//   showThis() {
+//     console.log('showThis -> this', this);
+//   },
+
+//  showTitle() {
+//    console.log('showTitle -> this.title', this.title);
+//   }, };
+
+//  book.showThis(); // book
+
+// const outerShowThis = book.showThis;
+
+//  outerShowThis(); // undefined
+
+// const outerShowTitle = book.showTitle;
+
+// outerShowTitle(); // Error
+
+// //? Що буде виведено в консоль
+
+// let user = {
+//   name: 'Джон',
+//   go() {
+//     console.log(this);
+//   },
+//  };
+
+//  const goFn = user.go;
+//  goFn(); // undefined
 
 /* 
 ? Тут функція makeUser повертає об'єкт.
 ? Яким буде результат при зверненні до об'єкта ref? Чому?
 */
 
-const makeUser = function () {
-this = undefined;
+// const makeUser = function () {
+// this = undefined;
 
- return {
-    name: 'Джон',
-    ref: this,  }; };
+//  return {
+//     name: 'Джон',
+//     ref: this,  }; };
 
- const user = makeUser();
+//  const user = makeUser();
 
- console.log(user.ref.name); // Error
+//  console.log(user.ref.name); // Error
 
-//? Що буде виведено в консоль
+// //? Що буде виведено в консоль
 
- function makeUser() {
- this = undefined;
+//  function makeUser() {
+//  this = undefined;
 
-   return {
-   name: 'Джон',
-    ref() {
-      return this;
-    },
-  }; }
+//    return {
+//    name: 'Джон',
+//     ref() {
+//       return this;
+//     },
+//   }; }
 
-const user = makeUser();
+// const user = makeUser();
 
 // console.log(user.ref().name); // Джон
 
@@ -127,3 +126,20 @@ const user = makeUser();
 // console.log(chopShop.calcTotalPrice('Sapphire')); // 9800
 // console.log(chopShop.calcTotalPrice('Ruby')); // 1600
 // console.log(chopShop.calcTotalPrice('Aconit')); // Aconit не знайдено!
+
+
+// ? Фільтрація за діапазоном
+// ?
+// ? Напишіть функцію filterRange(numbers, a, b), яка приймає масив numbers, 
+// ? шукає в ньому елементи більші-рівні min та менші-рівні max і віддає масив цих елементів.
+// */
+
+const filterRange = (numbers, a, b)  => {
+  return numbers.filter((el, inx, arr) => {
+    return el >= min && el <= max
+    
+    })
+}
+
+ console.log([10, 20, 2, 3, 56, 4]);
+ console.log(filterRange([10, 20, 2, 3, 56, 4], 3, 10));
